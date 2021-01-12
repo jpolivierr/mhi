@@ -1,6 +1,7 @@
 .title-section{
     width: 100%;
     margin: auto;
+    max-width: 551px;
 }
 .title-top-container{
     position: relative;
@@ -37,4 +38,20 @@
 
 .title-bottom-container h2{
     margin-bottom: .5rem;
+}
+
+.title-content{
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.title-content::after{
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  right: 0;
+  margin: 0rem auto;
+  content: '';
+  width: 3rem;
+  border-bottom: 5px solid var(--yellow-color);
 }

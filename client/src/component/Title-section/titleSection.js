@@ -4,7 +4,7 @@ function TitleSection(props) {
   return (
     <div className="title-section">
       <div className="title-top-container">
-        <div className="transparent-text">{props.transparentText}</div>
+        <div style={props.color} className="transparent-text">{props.transparentText}</div>
         <p className="mini-text">{props.miniText}</p>
       </div>
 
