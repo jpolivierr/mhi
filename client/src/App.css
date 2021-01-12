@@ -1,0 +1,99 @@
+body{
+  --main-color: rgba(43, 108, 163, 1);
+  --green-color: rgba(75, 209, 160, 1); 
+  --yellow-color: rgba(244, 206, 80, 1); 
+  --transparant-blue: rgba(0, 85, 255, 0.055);
+  --dark-color: rgba(51, 51, 51, 1);
+  --silver-color: rgba(196, 196, 196, 1);
+  --light-text-color: rgb(100, 100, 100);
+  --dark-text-color: rgb(56, 56, 56);
+  --white-text-color: rgb(255, 255, 255);
+  --div-width: 90%;
+  --div-margin: 0rem auto;
+  --div-padding: 4rem 0rem;
+  --h2-margin-bottom: 2rem
+
+}
+
+*{
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  font-size: 2rem;
+  color: var(--dark-text-color);
+  font-weight: normal;
+}
+
+h2{
+  font-size: 2rem;
+  color: var(--dark-text-color);
+  font-weight: normal;
+}
+
+p{
+  color: var(--light-text-color);
+  margin-bottom: 2rem;
+}
+
+.sub-title{
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.main-button{
+  display: inline;
+  background-color: var(--green-color);
+  color: white;
+  font-size: .9rem;
+  font-weight: 500;
+  padding: .8em 2em;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 1px solid var(--green-color);
+  transition: all .3s ease-in-out;
+
+}
+
+.main-button:hover{
+  background-color: white;
+  color: var(--green-color);
+}
+
+.circles{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle-1{
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: var(--transparant-blue);
+}
+.inner-circle-2{
+  position: absolute;
+  content: '';
+  width: 45%;
+  height: 45%;
+  border-radius: 50%;
+  border: 4px solid var(--transparant-blue);
+}
+
+.inner-circle-3{
+  position: absolute;
+  content: '';
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 1px solid var(--transparant-blue);
+}

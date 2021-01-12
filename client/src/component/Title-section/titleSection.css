@@ -1,0 +1,37 @@
+.title-section{
+    width: 40%;
+    margin: auto;
+}
+.title-top-container{
+    position: relative;
+    text-align: center;
+    /* border: 1px solid blue; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transparent-text{
+    color: var(--transparant-blue);
+    font-size: 4rem;
+    font-weight: bold;
+}
+.mini-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: var(--main-color);
+    width: min-content;
+    display: flex;
+    align-items: center;
+}
+.title-bottom-container{
+    text-align: center;
+}
+
+.title-bottom-container h2{
+    margin-bottom: .5rem;
+}
