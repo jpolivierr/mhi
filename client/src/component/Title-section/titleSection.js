@@ -4,15 +4,14 @@ function TitleSection(props) {
   return (
     <div className="title-section">
       <div className="title-top-container">
-        <p className="transparent-text">EXPLORE</p>
-        <p className="mini-text">Contribution</p>
+        <div className="transparent-text">{props.transparentText}</div>
+        <p className="mini-text">{props.miniText}</p>
       </div>
 
       <div className="title-bottom-container">
-        <h2>EXPLORE</h2>
+        <h2>{props.title}</h2>
         <p className="title-content">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-          harum doloribus odio, libero at atque commodi.
+          {props.titleContent}
         </p>
       </div>
     </div>

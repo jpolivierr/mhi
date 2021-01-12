@@ -1,0 +1,42 @@
+.what-we-do-showcase{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+    row-gap: 2rem;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.box{
+    /* border: 2px solid green; */
+    height: 25rem;
+    display: flex;
+    align-items: flex-end;
+    max-width: 422px;
+}
+.box-content{
+    background-color: rgba(43, 109, 163, 0.884);
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+}
+.box-content h3{
+    color: white;
+}
+.showcase-mini-text{
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.box-content p{
+    margin: 0;
+}
+
+.showcase-1{
+    background: url(../../images/student3.jpg) no-repeat center center/cover;
+}
+.showcase-2{
+    background: url(../../images/student1.jpg) no-repeat center center/cover;
+}
+.showcase-3{
+    background: url(../../images/team2.jpg) no-repeat center center/cover;
+}

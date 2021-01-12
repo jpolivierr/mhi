@@ -1,12 +1,16 @@
 import Navigation from '../component/Navigation/Navigation'
 import Showcase from '../component/Showcase/Showcase'
 import OurMission from '../component/Our-mission/OurMission'
+import ThePledge from '../component/The-pledge/ThePledge'
+import WhatWeDo from '../component/What-we-do/WhatWeDo'
 function Home() {
   return (
     <div className="home">
       <Navigation/>
       <Showcase/>
       <OurMission/>
+      <ThePledge/>
+      <WhatWeDo/>
       {/* <Titlesection />
       <div className="main-button">SUPPORT US</div>
       <div className="circles">

@@ -1,0 +1,10 @@
+.the-pledge{
+    background-color: var(--main-color);
+}
+
+.the-pledge-content-box h2{
+    color: white;
+}
+.the-pledge-content-box p{
+    color: white;
+}

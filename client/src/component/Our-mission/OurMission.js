@@ -14,7 +14,7 @@ function OurMission() {
             sequi exercitationem rem ratione minima, necessitatibus eligendi
             incidunt facilis modi recusandae.
           </p>
-          <div className="main-button">SUPPORT US</div>
+          {/* <div className="main-button">SUPPORT US</div> */}
         </div>
       </div>
     </div>

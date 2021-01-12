@@ -1,20 +1,21 @@
 .title-section{
-    width: 40%;
+    width: 100%;
     margin: auto;
 }
 .title-top-container{
     position: relative;
     text-align: center;
-    /* border: 1px solid blue; */
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    height: 60px;
 }
 .transparent-text{
     color: var(--transparant-blue);
     font-size: 4rem;
     font-weight: bold;
+    height: min-content;
 }
 .mini-text{
     position: absolute;
@@ -25,10 +26,12 @@
     margin: auto;
     color: var(--main-color);
     width: min-content;
+    height: 30px;
     display: flex;
     align-items: center;
 }
 .title-bottom-container{
+    position: relative;
     text-align: center;
 }
 
