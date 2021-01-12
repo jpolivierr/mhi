@@ -4,6 +4,7 @@ import OurMission from '../component/Our-mission/OurMission'
 import ThePledge from '../component/The-pledge/ThePledge'
 import WhatWeDo from '../component/What-we-do/WhatWeDo'
 import Impact from '../component/Impact/Impact'
+import JoinUs from '../component/Join-us/JoinUs'
 function Home() {
   return (
     <div className="home">
@@ -13,6 +14,7 @@ function Home() {
       <ThePledge/>
       <WhatWeDo/>
       <Impact/>
+      <JoinUs/>
       {/* <Titlesection />
       <div className="main-button">SUPPORT US</div>
       <div className="circles">

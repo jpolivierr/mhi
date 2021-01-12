@@ -1,0 +1,35 @@
+.join-us{
+    background-color: var(--main-color);
+}
+.join-us-form{
+    max-width: 420px;
+    margin: 0rem auto;
+}
+.join-us-form h2{
+    position: relative;
+    color: white;
+    margin-bottom: var(--h2-margin-bottom);
+  padding-bottom: 1rem;
+}
+.join-us-form h2::before{
+    position: absolute;
+    content: '';
+    width: 3rem;
+    bottom: 0;
+    background: yellow;
+    border-bottom: 6px solid var(--yellow-color);
+  }
+.join-us-form p{
+    color: white;
+}
+.input-style{
+    display: grid;
+    grid-row:  repeat(1fr, 4);
+    row-gap: 1rem;
+    margin-bottom: 3rem;
+}
+.input-style input{
+    border: none;
+    padding: 1rem;
+    
+}
