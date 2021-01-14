@@ -1,8 +1,9 @@
 import './Navigation.css'
 
-function Navigation (){
+function Navigation (props){
     return(
         <div className="navigation">
+          
             <div className="nav-bar">
                 <div className="logo"> <strong>MHI</strong>  </div>
                 <div className="menu">
@@ -10,7 +11,9 @@ function Navigation (){
                     <div className="line line-2"></div>
                     <div className="line line-3"></div>
                 </div>
-                <div className="donate-button">
+                <div className="donate-button"
+                onClick = {()=>{props.Modal()}}
+                >
                     DONATE
                 </div>
             </div>

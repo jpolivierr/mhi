@@ -1,0 +1,28 @@
+.modal{
+    background-color: rgba(0, 0, 0, 0.767);
+    position: fixed ;
+     top: 0px ;
+     color: white;
+     z-index: 3;
+     width: 100vw;
+     height: 100vh;
+     margin: auto;
+     animation: modalIn .3s linear  ;
+}
+
+@keyframes modalIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes modalOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

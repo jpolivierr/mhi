@@ -1,0 +1,24 @@
+.footer{
+    background: var(--dark-color) ;
+}
+.section{
+    margin-bottom: 2rem;
+}
+.section h3{
+    color: rgba(255, 255, 255, 0.733);
+}
+.section p{
+    color: white;
+}
+
+.section ul li{
+    color: white;
+}
+
+.copy-right{
+    border-top: 1px solid rgba(255, 255, 255, 0.281);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.575);
+}
