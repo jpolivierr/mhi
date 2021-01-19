@@ -1,4 +1,5 @@
 import "./App.css"
+import "./Mobile.css"
 import Home from "./pages/home"
 import Donation from "./component/Donation/Donation"
 import Modal from "./component/Modal/Modal"

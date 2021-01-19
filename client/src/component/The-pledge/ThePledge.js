@@ -13,7 +13,6 @@ function ThePledge (props){
               sequi exercitationem rem ratione minima, necessitatibus eligendi
               incidunt facilis modi recusandae.
             </p>
-            <div className="main-button" onClick = {()=> props.Donate()}>SUPPORT US</div>
           </div>
         </div>
       </div>

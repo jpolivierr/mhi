@@ -1,0 +1,36 @@
+.our-mission .content-box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid purple; */
+    column-gap: 3rem;
+    
+}
+
+.mission-box-img{
+    position: relative;
+    background: url(../../images/team.jpg) no-repeat center center/cover;
+    width: 80%;
+
+    margin: 0rem auto;
+}
+.mission-box-img::before{
+    content: '';
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    background-color: transparent;
+    border: 8px solid var(--main-color);
+    width: 90%;
+    height: 80%;
+    margin: 0rem auto;
+    z-index: -1;
+}
+
+.our-mission-content-box{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+ 
+}

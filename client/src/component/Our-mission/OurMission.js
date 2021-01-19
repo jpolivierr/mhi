@@ -5,7 +5,10 @@ function OurMission() {
   return (
     <div className="section-style our-mission">
       <div className="content-box-container">
-        <div className="content-box">
+        <div className="mission-box-img">
+
+        </div>
+        <div className="content-box our-mission-content-box">
           <h2>Our Mission</h2>
           <div className="sub-title">Support our kids in haiti.</div>
           <p>

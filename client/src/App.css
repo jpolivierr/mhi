@@ -9,11 +9,11 @@ body{
   --light-text-color: rgb(100, 100, 100);
   --dark-text-color: rgb(56, 56, 56);
   --white-text-color: rgb(255, 255, 255);
+  --nav-height: 5rem;
   --div-width: 90%;
   --div-margin: 0rem auto;
   --div-padding: 4rem 0rem;
   --h2-margin-bottom: 2rem
-
 }
 
 *{
@@ -113,7 +113,6 @@ li{
   padding: var(--div-padding) ;
 }
 .content-box-container{
-  /* border: 1px solid blue; */
   width: var(--div-width);
   margin: var(--div-margin);
 }
