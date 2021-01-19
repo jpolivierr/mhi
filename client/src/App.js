@@ -8,7 +8,7 @@ import { useState } from "react"
 
 function App() {
   const [modal, setModalStatus] = useState({
-    status: false,
+    status: true,
     styling: "",
   })
 
@@ -17,7 +17,7 @@ function App() {
   }
 
   const displayModal = () => {
-    if (modal.status === true) {
+    if (modal.status === false) {
       return (
         <div>
           <Modal Modal={modalstatus} />
@@ -38,7 +38,7 @@ function App() {
     <div className="App">
       {displayModal()}
       <Navigation Modal={modalstatus} />
-      <Home />
+      <Home donate={modalstatus} />
       <Footer />
     </div>
   )

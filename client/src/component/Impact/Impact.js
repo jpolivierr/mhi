@@ -13,7 +13,6 @@ function Impact (){
           title="Make An Impact"
           titleContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit harum doloribus odio, libero at atque commodi."
         />
-        <div className="main-button">DONATE</div>
         </div>
         
       </div>

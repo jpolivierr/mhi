@@ -7,7 +7,6 @@ const Modal = (props) => {
         onClick={()=> props.Modal()}
         style = {props.modalStyling}
         >
-         
         </div>
     )
 }

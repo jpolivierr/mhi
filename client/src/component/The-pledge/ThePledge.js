@@ -1,6 +1,6 @@
 import './ThePledge.css'
 
-function ThePledge (){
+function ThePledge (props){
     return(
         <div className="section-style the-pledge">
         <div className="content-box-container">
@@ -13,7 +13,7 @@ function ThePledge (){
               sequi exercitationem rem ratione minima, necessitatibus eligendi
               incidunt facilis modi recusandae.
             </p>
-            <div className="main-button">SUPPORT US</div>
+            <div className="main-button" onClick = {()=> props.Donate()}>SUPPORT US</div>
           </div>
         </div>
       </div>

@@ -1,11 +1,16 @@
 .donation{
     background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     position: fixed ;
      top: 0px ;
      z-index: 3;
      width: 95%;
-     max-width: 635px;
-     height: 600px;
+     height: 95%;
+     max-height: 700px;
+     max-width: 557px;
      top: 0;
      bottom: 0;
      left: 0;
@@ -13,6 +18,7 @@
      margin: auto;
      /* transform: translate(0%, 15%); */
      animation: donationOn .5s ease-in-out;
+     padding: 2rem 1rem;
 }
 @keyframes donationOn {
     0%{
@@ -22,9 +28,17 @@
         transform: scale(1);
     }
 }
+
+.Field{
+    max-width: 390px;
+}
 .top-section{
+    position: absolute;
+    left: 0;
+    top: 0;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }
 .close-btn{
     cursor: pointer;
@@ -45,4 +59,170 @@
 
 .close-btn:hover{
     background-color: silver;
+}
+
+.header-section{
+    text-align: center;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.425);
+    margin-bottom: 1.3rem;
+}
+.header-section h3 {
+    margin-bottom: .5rem;
+}
+.header-section p {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+}
+
+.block{
+    /* border: 1px solid red; */
+    margin-bottom: .8rem;
+    display: grid;
+    position: relative;
+    
+}
+.block h4{
+    margin-bottom: .6rem;
+}
+.block p{
+    font-size: .7rem;
+    margin-bottom: .5rem;
+}
+.block strong{
+    font-size: .7rem;
+}
+.block input{
+    width: 100%;
+    border: 2px solid rgba(192, 192, 192, 0.63);
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+   cursor: pointer;
+   margin-right: 1rem;
+   margin-bottom: 1rem;
+}
+.cards-logo{
+    width: 100px;
+    height: 20px;
+    background: url(../../images/payment.png) no-repeat center center/cover;
+    margin-bottom: 5px ;
+}
+.block-button-container{
+    display: flex;
+     flex-flow: wrap;
+}
+.block-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    border: 2px solid rgba(192, 192, 192, 0.63);
+    padding: .5rem .8rem;
+    border-radius: 5px;
+   cursor: pointer;
+   margin-right: 1rem;
+   margin-bottom: 1rem;
+}
+.card-icon{
+    width: 25px;
+    height: 20px;
+    margin-right: .5rem;
+}
+#paypal-logo{  
+    background: url(../../images/paypal.png) no-repeat center center/cover;
+    z-index: -1;
+}
+#cash-app-logo{  
+    background: url(../../images/cashapp.png) no-repeat center center/cover;
+    z-index: -1;
+}
+
+.selected-btn{
+    border: 2px solid var(--main-color) !important;
+    background: rgba(43, 109, 163, 0.356);
+    transition: all .2s ease-in-out;
+}
+
+.block-price{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.at{
+    min-width: 118px;
+}
+
+.navigation-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.next-button{
+    background: var(--main-color);
+    color: white;
+    width: 8rem;
+    padding: .5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid var(--main-color) ;
+    border-radius: 5px;
+}
+.back-button{
+    border: 2px solid var(--main-color) ;
+    background: white;
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+
+.s-button{
+    border: 2px solid var(--green-color) ;
+    background: var(--green-color);
+    color: white;
+}
+
+.address-boxx{
+    display: flex;
+    /* flex-flow: wrap; */
+}
+
+.address-boxx input:nth-child(3),
+.address-boxx input:nth-child(4)
+{
+    width: 45.4%;
+}
+
+.c-input{
+    
+    z-index: 1;
+    position: relative;
+}
+
+.c-input .custom-input{
+
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+.c-input::before{
+    position: absolute;
+    content: '$';
+  
+    z-index: 2;
+    width: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    margin: auto 0rem;
+}
+
+.pm-error{
+    position: absolute;
+    top: -1rem;
+    font-size: .8rem;
+    color: red;
 }

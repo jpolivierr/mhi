@@ -6,13 +6,15 @@ import WhatWeDo from '../component/What-we-do/WhatWeDo'
 import Impact from '../component/Impact/Impact'
 import JoinUs from '../component/Join-us/JoinUs'
 import News from '../component/News/News'
-function Home() {
+function Home(props) {
   return (
     <div className="home">
   
       <Showcase/>
       <OurMission/>
-      <ThePledge/>
+      <ThePledge 
+        Donate = {()=> props.donate()}
+      />
       <WhatWeDo/>
       <Impact/>
       <JoinUs/>
