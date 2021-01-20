@@ -1,10 +1,47 @@
-.the-pledge{
-    background-color: var(--main-color);
+.the-pledge {
+  /* background-color: var(--main-color); */
+  height: var(--div-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.the-pledge-background{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  background-color: var(--main-color);
 }
 
-.the-pledge-content-box h2{
-    color: white;
+.the-pledge-content-box h2 {
+  color: white;
 }
-.the-pledge-content-box p{
-    color: white;
+.the-pledge-content-box p {
+  color: white;
+}
+.content-box-container.with-pledge{
+    /* border: 1px solid blue; */
+
+    z-index: 1 ;
+    flex-flow: row-reverse;
+}
+.mission-box-img.with-pledge {
+  background: url(../../images/student1.jpg) no-repeat center center/cover;
+  /* grid-template-columns: 2fr 1.6fr !important; */
+  place-self: flex-end;
+  box-shadow: 5px 2px 29px rgba(7, 7, 7, 0.185) !important;
+
+}
+.mission-box-img.with-pledge::before {
+  background-color: transparent;
+  border: 8px solid var(--yellow-color) !important;
+top: 6rem;
+  right: -3rem;
+
+}
+
+.circles.circles-for-pledge{
+    right: -150px;
+    bottom: -90px;
 }

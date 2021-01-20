@@ -1,66 +1,91 @@
 @media (min-width: 700px) {
-  body{
+  body {
     /* --div-width: 80%; */
+    /* --div-padding: 7rem 0rem; */
   }
-  *{
-      font-size: 15px;
+  * {
+    font-size: 15px;
   }
   .nav-bar {
     grid-template-columns: 1fr 3.5fr 8rem !important;
     width: 95% !important;
   }
-  .nav-links{
-      display: flex !important;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 2rem;
+  .nav-links {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
   }
-  .nav-links li{
-      margin: 0rem 1rem;
+  .nav-links li {
+    margin: 0rem 1rem;
   }
   .menu {
     display: none !important ;
   }
 
-  .showcase{
-      height: calc(100vh - var(--nav-height)) !important;
+  .showcase {
+    height: calc(100vh - var(--nav-height)) !important;
+  }
+
+  .content-box-container {
+    grid-template-columns: 1.3fr 1.5fr !important;
+  }
+  .mission-box-img {
+    display: block !important;
   }
 }
 
 @media (min-width: 800px) {
-    body{
-      --div-width: 97%;
-      --div-padding: 10rem 0rem;
-    }
-    *{
-        font-size: 15px;
-    }
-    .nav-bar {
-      grid-template-columns: 1fr 3.5fr 8rem !important;
-      width: 95% !important;
-    }
-    
+  body {
+    --div-width: 97%;
+    /* --div-padding: 10rem 0rem; */
   }
+  * {
+    font-size: 15px;
+  }
+  .nav-bar {
+    grid-template-columns: 1fr 3.5fr 8rem !important;
+    width: 95% !important;
+  }
+  
+}
 
-@media (min-width: 1400px) {
-  body{
+@media (min-width: 900px) {
+  body {
     --div-width: 80%;
   }
-  *{
-      font-size: 17px;
+  .our-mission .content-box-container {
+    height: 90% !important;
+  }
+}
+@media (min-width: 1191px) {
+  body {
+    --div-width: 952px;
+  }
+  .our-mission .content-box-container {
+    height: 90% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    /* --div-width: 80%; */
+  }
+  * {
+    font-size: 17px;
   }
   .nav-bar {
     grid-template-columns: 1fr 3.5fr 12rem !important;
     width: 90% !important;
   }
-  .nav-links{
-      display: flex !important;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 2rem;
+  .nav-links {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
   }
-  .nav-links li{
-      margin: 0rem 2rem;
+  .nav-links li {
+    margin: 0rem 2rem;
   }
   .menu {
     display: none !important ;

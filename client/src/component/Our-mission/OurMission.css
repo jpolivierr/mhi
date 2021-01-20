@@ -1,22 +1,36 @@
-.our-mission .content-box-container{
+.our-mission{
+    height: var(--div-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content-box-container{
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     /* border: 2px solid purple; */
     column-gap: 3rem;
-    
+    height: 90%;
 }
 
 .mission-box-img{
+    display: none;
     position: relative;
     background: url(../../images/team.jpg) no-repeat center center/cover;
-    width: 80%;
-
-    margin: 0rem auto;
+    width: 85%;
+    max-width: 347px;
+    height: 100%;
+    max-height: 350px;
+    box-shadow: -5px 2px 29px rgba(7, 7, 7, 0.185);
+    /* height: 300px; */
 }
+
 .mission-box-img::before{
     content: '';
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     right: 3rem;
     background-color: transparent;
     border: 8px solid var(--main-color);
@@ -26,11 +40,14 @@
     z-index: -1;
 }
 
-.our-mission-content-box{
+.content-box{
     /* border: 1px solid red; */
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
- 
+}
+.circles.circles-for-mision{
+    left: -150px;
+    bottom: -90px;
 }

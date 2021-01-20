@@ -13,7 +13,9 @@ body{
   --div-width: 90%;
   --div-margin: 0rem auto;
   --div-padding: 4rem 0rem;
-  --h2-margin-bottom: 2rem
+  --div-height: 60vh;
+  --h2-margin-bottom: 2rem;
+  --circle-size: 400px;
 }
 
 *{
@@ -75,13 +77,15 @@ li{
 }
 
 .circles{
-  position: relative;
-  width: 500px;
-  height: 500px;
+  position: absolute;
+  width: var(--circle-size);
+  height: var(--circle-size);
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid red; */
+  z-index: -2;
 }
 
 .inner-circle-1{
@@ -89,12 +93,13 @@ li{
   height: 30%;
   border-radius: 50%;
   background-color: var(--transparant-blue);
+  
 }
 .inner-circle-2{
   position: absolute;
   content: '';
-  width: 45%;
-  height: 45%;
+  width: 65%;
+  height: 65%;
   border-radius: 50%;
   border: 4px solid var(--transparant-blue);
 }
@@ -102,8 +107,8 @@ li{
 .inner-circle-3{
   position: absolute;
   content: '';
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   border: 1px solid var(--transparant-blue);
 }
@@ -115,9 +120,6 @@ li{
 .content-box-container{
   width: var(--div-width);
   margin: var(--div-margin);
-}
-.content-box{
-  /* border: 1px solid red; */
 }
 
 .content-box h2{
