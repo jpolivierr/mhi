@@ -4,7 +4,7 @@ import TitleSection from "../Title-section/titleSection"
 function WhatWeDo() {
   return (
     <div className="section-style what-we-do">
-      <div className="content-box-container">
+      <div className="content-box-container what-we-do-box-container">
         <TitleSection
           transparentText="EXPLORE"
           miniText="contribution"
@@ -18,6 +18,7 @@ function WhatWeDo() {
               <h3>Provide Education</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Nesciunt, accusantium!
               </p>
             </div>
@@ -28,6 +29,7 @@ function WhatWeDo() {
               <h3>Provide Education</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Nesciunt, accusantium!
               </p>
             </div>
@@ -38,6 +40,7 @@ function WhatWeDo() {
               <h3>Provide Education</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Nesciunt, accusantium!
               </p>
             </div>

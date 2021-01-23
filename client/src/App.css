@@ -9,13 +9,14 @@ body{
   --light-text-color: rgb(100, 100, 100);
   --dark-text-color: rgb(56, 56, 56);
   --white-text-color: rgb(255, 255, 255);
-  --nav-height: 5rem;
+  --nav-height: 7rem;
   --div-width: 90%;
   --div-margin: 0rem auto;
   --div-padding: 4rem 0rem;
-  --div-height: 60vh;
+  --div-height: 70vh;
   --h2-margin-bottom: 2rem;
   --circle-size: 400px;
+  overflow-x: hidden;
 }
 
 *{
@@ -28,13 +29,25 @@ body{
 h1{
   font-size: 2rem;
   color: var(--dark-text-color);
-  font-weight: normal;
+  font-weight: bold !important;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+h1::before{
+  position: absolute;
+  content: '';
+  width: 3rem;
+  right: 0;
+  left: 0;
+  margin: 0rem auto;
+  bottom: 0;
+  border-bottom: 6px solid var(--yellow-color);
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--dark-text-color);
-  font-weight: normal;
+  font-weight: bold;
 }
 h3{
   font-size: 1.3rem;
@@ -80,12 +93,12 @@ li{
   position: absolute;
   width: var(--circle-size);
   height: var(--circle-size);
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
   z-index: -2;
+  display: none;
 }
 
 .inner-circle-1{
@@ -133,6 +146,5 @@ li{
   content: '';
   width: 3rem;
   bottom: 0;
-  background: yellow;
   border-bottom: 6px solid var(--yellow-color);
 }

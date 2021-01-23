@@ -1,9 +1,14 @@
 .our-mission{
+
     height: var(--div-height);
+    max-height: 600px;
+    min-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 0 !important;
+
 }
 
 .content-box-container{
@@ -30,7 +35,7 @@
 .mission-box-img::before{
     content: '';
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     right: 3rem;
     background-color: transparent;
     border: 8px solid var(--main-color);
@@ -50,4 +55,27 @@
 .circles.circles-for-mision{
     left: -150px;
     bottom: -90px;
+}
+
+.our-mission-content-box h2{
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+}
+
+.our-mission-content-box h2::after{
+   position: absolute;
+   content: 'GOAL';
+   height: 50px;
+   top: 0;
+   bottom: 0;
+   left: 20%;
+   right: 0;
+   margin: auto 0rem;
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+   font-size: 6rem;
+   color: var(--transparant-blue);
+   display: none;
 }

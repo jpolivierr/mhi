@@ -3,7 +3,7 @@ import "./JoinUs.css"
 function JoinUs() {
   return (
     <div className="section-style join-us">
-      <div className="content-box-container">
+      <div className="content-box-container join-us-box-container">
         <form className="join-us-form" action="">
           <h2>Join Us Today!</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, nobis.</p>

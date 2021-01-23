@@ -1,5 +1,10 @@
 .impact{
+    border-top: 1px solid var(--yellow-color);
     position: relative;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .impact-img{
     position: absolute;

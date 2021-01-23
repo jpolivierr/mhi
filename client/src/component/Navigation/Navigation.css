@@ -1,7 +1,8 @@
 .navigation{
     /* border: 1px solid red; */
+    height: 9vh;
+    width: 100%;
     top: 0;
-    width: 100vw;
     height: 9vh;
     min-height: var(--nav-height);
     max-height: var(--nav-height);
@@ -11,23 +12,24 @@
     position: fixed;
     z-index: 2;
     background: white;
+    /* border-bottom: 1px solid silver; */
 }
 .nav-bar{
     /* border: 1px solid blue; */
     display: grid;
-    grid-template-columns: 1fr 5rem 8rem;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
+    grid-template-columns: 1fr 2fr .5fr ;
+     justify-content: center;
+    align-items: center; 
+    width: var(--div-width);
     height: 100%;
-    /* margin: var(--div-margin); */
+    margin: var(--div-margin);
 }
 .logo strong{
     font-size: 1.8rem;
 }
 .nav-links{
     display: none;
-    /* border: 2px solid purple; */
+    font-weight: 500;
 }
 .menu{
     width: 2rem;
@@ -36,7 +38,8 @@
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    margin-right: 1rem;
+    margin-right: 3rem;
+    justify-self: flex-end;
 }
 
 .line{
@@ -50,10 +53,10 @@
     align-items: center;
     background-color: var(--green-color);
     color: var(--white-text-color);
-    padding: 0em 1em;
-    height: 100%;
+    padding: .5em 1.5em;
     cursor: pointer;
     border: 1px solid var(--green-color);
+    border-radius: 100px;
     transition: all .3s ease-in-out;
 }
 .donate-button:hover{

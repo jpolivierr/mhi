@@ -1,17 +1,21 @@
 .the-pledge {
-  /* background-color: var(--main-color); */
+  background-color: var(--main-color);
   height: var(--div-height);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  max-height: 600px;
+  min-height: 500px;
 }
 .the-pledge-background{
   position: absolute;
-  top: 0;
+  top: 20px;
   width: 100%;
   height: 80%;
+  min-height: 430px;
   background-color: var(--main-color);
+  display: none;
 }
 
 .the-pledge-content-box h2 {
@@ -36,12 +40,12 @@
 .mission-box-img.with-pledge::before {
   background-color: transparent;
   border: 8px solid var(--yellow-color) !important;
-top: 6rem;
-  right: -3rem;
+top: 5rem;
+  right: -2rem;
 
 }
 
 .circles.circles-for-pledge{
     right: -150px;
-    bottom: -90px;
+    bottom: -140px;
 }

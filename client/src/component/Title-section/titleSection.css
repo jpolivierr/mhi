@@ -14,7 +14,7 @@
 }
 .transparent-text{
     color: var(--transparant-blue);
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     height: min-content;
 }

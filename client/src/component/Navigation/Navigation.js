@@ -3,7 +3,7 @@ import './Navigation.css'
 function Navigation (props){
     return(
         <div className="navigation">
-          
+          <div className="nav-background-color"></div>
             <div className="nav-bar">
                 <div className="logo"> <strong>MHI</strong>  </div>
                 <ul className="nav-links">

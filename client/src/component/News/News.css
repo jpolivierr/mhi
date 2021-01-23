@@ -1,12 +1,19 @@
+.news-section{
+    position: relative;
+    padding: 5rem 0rem;
+    background-color: transparent;
+}
 .news-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-columns: 1fr ;
     row-gap: 2rem;
     column-gap: 2rem;
-    margin-top: 8rem;
+    margin-top: 2rem;
    
 }
-.news{
-    
+
+.circle-for-news {
+  right: -150px;
+  bottom: -150px;
 }

@@ -1,23 +1,30 @@
+.what-we-do{
+    /* border: 1px solid yellow; */
+    padding-top: .5rem !important;
+}
+
 .what-we-do-showcase{
     /* border: 1px solid red; */
     display: grid;
     grid-template-rows: repeat(1fr, 3);
     row-gap: 2rem;
     justify-content: center;
-    margin-top: 4rem;
+    margin: 2rem 0rem;
+    margin-top: 0rem;
+    height: min-content;
 }
 .box{
     /* border: 2px solid green; */
-    height: 25rem;
+    /* height: 25rem; */
     display: flex;
     align-items: flex-end;
-    max-width: 422px;
+    /* max-width: 422px; */
 }
 .box-content{
     background-color: rgba(43, 109, 163, 0.884);
     width: 100%;
     text-align: left;
-    padding: 1rem;
+    padding: 3rem 2rem;
 }
 .box-content h3{
     color: white;

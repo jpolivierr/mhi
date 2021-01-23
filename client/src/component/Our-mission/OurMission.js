@@ -12,7 +12,7 @@ function OurMission() {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
             alias eveniet nihil accusamus corrupti! Est ipsum esse, placeat et
-            sequi exercitationem rem ratione minima,
+            sequi exercitationem rem ratione minima.
           </p>
         </div>
       </div>

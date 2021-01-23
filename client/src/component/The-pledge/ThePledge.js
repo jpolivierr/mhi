@@ -13,8 +13,7 @@ function ThePledge(props) {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
             alias eveniet nihil accusamus corrupti! Est ipsum esse, placeat et
-            sequi exercitationem rem ratione minima, necessitatibus eligendi
-            incidunt facilis modi recusandae.
+            sequi exercitationem rem ratione minima.
           </p>
         </div>
         <div className="mission-box-img with-pledge"></div>
