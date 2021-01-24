@@ -5,41 +5,53 @@ import Donation from "./component/Donation/Donation"
 import Modal from "./component/Modal/Modal"
 import Navigation from "./component/Navigation/Navigation"
 import Footer from "./component/Footer/Footer"
+import QuickNav from './component/Quick-nav/Quicknav'
 import { useState } from "react"
 
 function App() {
   const [modal, setModalStatus] = useState({
-    status: true,
+    menu: true,
+    donation: true,
     styling: "",
   })
 
-  const modalstatus = () => {
-    setModalStatus({ ...modal, status: !modal.status })
+  const donationstatus = () => {
+    setModalStatus({ ...modal, donation: !modal.donation })
   }
-
+  const menustatus = () => {
+    setModalStatus({ ...modal, menu: !modal.menu })
+  }
+  
+  const openMenu = () => {
+    console.log("clicked")
+    setModalStatus({ ...modal, menu: !modal.menu, })
+  }
+  console.log(modal)
   const displayModal = () => {
-    if (modal.status === false) {
+    if (modal.donation === false) {
       return (
         <div>
-          <Modal Modal={modalstatus} />
-          <Donation close={modalstatus} modalStyling={modal.styling} />
+          <Modal Modal={donationstatus} />
+          <Donation close={donationstatus} modalStyling={modal.styling} />
         </div>
       )
-    } else {
-      //  setModalStatus({ ...modal, styling: "animation: modalOut .3s linear" })
-      //  return(
-      //    <Modal Modal={modalstatus}
-      //   modalStyling= {{animation: 'modalOut .3s linear forwards'}}  />
-      //  )
-      return null
+    }
+    if (modal.menu === false) {
+      return (
+        <div>
+          <Modal Modal={menustatus} />
+          <QuickNav Modal={menustatus} />
+        </div>
+      )
     }
   }
 
   return (
     <div className="App">
       {displayModal()}
-      <Navigation Modal={modalstatus} />
-      <Home donate={modalstatus} />
+      {/* {displayMenu()} */}
+      <Navigation Modal={donationstatus} Menu={openMenu} />
+      <Home donate={donationstatus} />
       <Footer />
     </div>
   )

@@ -7,12 +7,12 @@ function Navigation (props){
             <div className="nav-bar">
                 <div className="logo"> <strong>MHI</strong>  </div>
                 <ul className="nav-links">
-                    <li>Home</li>
+                    <li className='active-link'>Home</li>
                     <li>About Us</li>
                     <li>Projects</li>
                     <li>Contact Us</li>
                 </ul>
-                <div className="menu">
+                <div className="menu" onClick = {()=>{props.Menu()}}>
                     <div className="line line-1"></div>
                     <div className="line line-2"></div>
                     <div className="line line-3"></div>

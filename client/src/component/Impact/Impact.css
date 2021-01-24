@@ -1,5 +1,4 @@
 .impact{
-    border-top: 1px solid var(--yellow-color);
     position: relative;
     min-height: 450px;
     display: flex;

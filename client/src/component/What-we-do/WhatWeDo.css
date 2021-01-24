@@ -25,6 +25,7 @@
     width: 100%;
     text-align: left;
     padding: 3rem 2rem;
+    z-index: 0 !important;
 }
 .box-content h3{
     color: white;

@@ -30,7 +30,20 @@
 .nav-links{
     display: none;
     font-weight: 500;
+    /* border: 1px solid blue; */
 }
+  .nav-links li {
+      padding: .5rem 0rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+  }
+  .nav-links li:nth-last-child(1) {
+      margin-right: 0;
+  }
+  .nav-links li:hover {
+      color: var(--main-color);
+  }
 .menu{
     width: 2rem;
     height: 1.3rem;
@@ -40,6 +53,7 @@
     justify-content: space-between;
     margin-right: 3rem;
     justify-self: flex-end;
+    cursor: pointer;
 }
 
 .line{
@@ -62,4 +76,9 @@
 .donate-button:hover{
     background-color: white;
     color:  var(--green-color);
+}
+
+.active-link{
+    border-bottom: 3px solid var(--main-color);
+    
 }
