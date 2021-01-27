@@ -1,0 +1,69 @@
+.page-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.page-content-grid h2{
+  font-size: 3rem !important;
+}
+.page-content-grid p{
+  margin-top: 2rem;
+}
+.about-page-img{
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.about{
+    margin-top: var(--nav-height);
+}
+
+.projects-content-grid{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-page-img{
+    width: 95%;
+    max-width: 900px;
+    background: red;
+    height: 400px;
+}
+
+.contact-info-list li p{
+    margin: 0;
+}
+.contact-info-list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contact-info-list li i{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.contact-info-list li a{
+    color: var(--main-color);
+}
+.contact-form{
+   
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    border: none;
+    background: rgba(243, 243, 243, 0.651);
+    border-radius: 5px;
+}
+.form-button{
+   width: 100%;
+   border-radius: 5px;
+}

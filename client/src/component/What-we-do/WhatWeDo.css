@@ -1,6 +1,7 @@
 .what-we-do{
     /* border: 1px solid yellow; */
     padding-top: .5rem !important;
+    position: relative;
 }
 
 .what-we-do-showcase{
@@ -21,14 +22,17 @@
     /* max-width: 422px; */
 }
 .box-content{
-    background-color: rgba(43, 109, 163, 0.884);
+    border: 2px solid  var(--background-blue);
+    border-radius: 10px;
+    /* background-color: var(--background-blue); */
+    background-color: transparent;
     width: 100%;
     text-align: left;
     padding: 3rem 2rem;
     z-index: 0 !important;
 }
 .box-content h3{
-    color: white;
+    color: var(--dark-text-color);
 }
 .showcase-mini-text{
     color: var(--green-color);
@@ -36,15 +40,19 @@
 }
 
 .box-content p{
+    color: var(--light-text-color);
     margin: 0;
 }
 
 .showcase-1{
-    background: url(../../images/student3.jpg) no-repeat center center/cover;
+    /* background: url(../../images/student3.jpg) no-repeat center center/cover; */
+    background: transparent
 }
 .showcase-2{
-    background: url(../../images/student1.jpg) no-repeat center center/cover;
+    /* background: url(../../images/student1.jpg) no-repeat center center/cover; */
+    background: transparent
 }
 .showcase-3{
-    background: url(../../images/team2.jpg) no-repeat center center/cover;
+    /* background: url(../../images/team2.jpg) no-repeat center center/cover; */
+    background: transparent
 }

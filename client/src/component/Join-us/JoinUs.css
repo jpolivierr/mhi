@@ -1,5 +1,6 @@
 .join-us{
     background-color: var(--main-color);
+    border-top: 13px solid var(--yellow-color);
 }
 .join-us-form{
     /* max-width: 420px; */
@@ -31,5 +32,9 @@
 .input-style input{
     border: none;
     padding: 1rem;
-    
+}
+
+.sign-up-button{
+    width: 200px;
+    place-self: flex-end;
 }

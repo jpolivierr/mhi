@@ -7,12 +7,13 @@
   position: relative;
   max-height: 600px;
   min-height: 500px;
+  padding-top: 0;
 }
 .the-pledge-background{
   position: absolute;
   top: 20px;
   width: 100%;
-  height: 80%;
+  height: 70%;
   min-height: 430px;
   background-color: var(--main-color);
   display: none;
@@ -39,7 +40,7 @@
 }
 .mission-box-img.with-pledge::before {
   background-color: transparent;
-  border: 8px solid var(--yellow-color) !important;
+  border: 13px solid var(--yellow-color) !important;
 top: 5rem;
   right: -2rem;
 

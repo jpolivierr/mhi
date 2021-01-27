@@ -5,7 +5,11 @@ import Donation from "./component/Donation/Donation"
 import Modal from "./component/Modal/Modal"
 import Navigation from "./component/Navigation/Navigation"
 import Footer from "./component/Footer/Footer"
-import QuickNav from './component/Quick-nav/Quicknav'
+import QuickNav from "./component/Quick-nav/Quicknav"
+import About from "./pages/about"
+import Projects from "./pages/projects"
+import Contact from "./pages/contact"
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
 import { useState } from "react"
 
 function App() {
@@ -21,12 +25,11 @@ function App() {
   const menustatus = () => {
     setModalStatus({ ...modal, menu: !modal.menu })
   }
-  
+
   const openMenu = () => {
     console.log("clicked")
-    setModalStatus({ ...modal, menu: !modal.menu, })
+    setModalStatus({ ...modal, menu: !modal.menu })
   }
-  console.log(modal)
   const displayModal = () => {
     if (modal.donation === false) {
       return (
@@ -47,13 +50,23 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {displayModal()}
-      {/* {displayMenu()} */}
-      <Navigation Modal={donationstatus} Menu={openMenu} />
-      <Home donate={donationstatus} />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        {displayModal()}
+        {/* {displayMenu()} */}
+        <Navigation Modal={donationstatus} Menu={openMenu} />
+        <Switch>
+          <Route path='/home' exact component={Home}/>
+          <Route path='/about' exact component={About}/>
+          <Route path='/projects' exact component={Projects}/>
+          <Route path='/contact' exact component={Contact}/>
+          <Route path='/' exact component={Home}/>
+          
+          {/* <Home donate={donationstatus} /> */}
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

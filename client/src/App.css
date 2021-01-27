@@ -1,9 +1,10 @@
 
 body{
-  --main-color: rgba(43, 108, 163, 1);
-  --green-color: rgba(75, 209, 160, 1); 
-  --yellow-color: rgba(244, 206, 80, 1); 
-  --transparant-blue: rgba(0, 85, 255, 0.055);
+  --main-color: rgba(46, 49, 146, 1);
+  --transparant-blue: rgba(46, 49, 146, 0.075);
+  --background-blue: rgba(46, 49, 146, 0.89);
+  --green-color: rgba(57, 181, 74, 1); 
+  --yellow-color: rgba(252, 176, 64, 1); 
   --dark-color: rgba(51, 51, 51, 1);
   --silver-color: rgba(196, 196, 196, 1);
   --light-text-color: rgb(100, 100, 100);
@@ -54,6 +55,13 @@ h3{
   margin-bottom: 1rem;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: .2rem 1rem;
+}
+
 p{
   color: var(--light-text-color);
   margin-bottom: 2rem;
@@ -76,11 +84,12 @@ li{
   color: white;
   font-size: .9rem;
   font-weight: 500;
-  padding: .8em 3em;
+  padding: .8em 2em;
   border-radius: 100px;
   cursor: pointer;
   border: 1px solid var(--green-color);
   transition: all .3s ease-in-out;
+  font-weight: bold;
 
 }
 

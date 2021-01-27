@@ -13,7 +13,7 @@ function JoinUs() {
             <input type="email" placeholder="*E-mail" />
             <input type="text" placeholder="Phone # (optional)" />
           </div>
-          <button className="main-button">SIGN UP</button>
+          <button className="main-button sign-up-button">SIGN UP</button>
         </form>
       </div>
     </div>

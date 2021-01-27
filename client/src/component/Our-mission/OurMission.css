@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 0;
+    padding-bottom: 0 !important;
 
 }
 
@@ -38,11 +38,23 @@
     top: 5rem;
     right: 3rem;
     background-color: transparent;
-    border: 8px solid var(--main-color);
+    border: 13px solid var(--main-color);
     width: 90%;
     height: 80%;
     margin: 0rem auto;
     z-index: -1;
+}
+.just-mission::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: transparent;
+    width: 100px;
+    height: 80px;
+    margin: 0rem auto;
+    z-index: -1;
+    background: var(--yellow-color);
 }
 
 .content-box{

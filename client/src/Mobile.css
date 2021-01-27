@@ -13,6 +13,14 @@
     align-items: center;
   }
 
+  .logo{
+    /* border: 1px solid red; */
+     width: 145px !important;
+    height: 60px !important;
+    cursor: pointer;
+}
+  
+
   .menu {
     display: none !important ;
   }
@@ -41,12 +49,11 @@
     flex-flow: column !important;
   }
   .what-we-do-showcase {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
     column-gap: 2rem;
   }
   .showcase-1 {
     grid-column: 1;
-    grid-row: 1 / span 2;
     height: 100%;
   }
   .join-us-box-container {
@@ -87,6 +94,12 @@
   }
   .news {
     width: 30%;
+  }
+  .page-grid-container{
+    grid-template-columns: 1.5fr 1fr !important;
+  }
+  .about-page-img{
+    display: flex !;
   }
   .footer-box-container {
     /* border: 1px solid red; */

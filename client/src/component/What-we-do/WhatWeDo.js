@@ -9,7 +9,7 @@ function WhatWeDo() {
           transparentText="EXPLORE"
           miniText="contribution"
           title="What We Do"
-          titleContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit harum doloribus odio, libero at atque commodi."
+          titleContent="Many Hands International builds character and encourages personal growth of youth in underserved communities in order to create future community stewards."
         />
         <div className="what-we-do-showcase">
           <div className="box showcase-1">
@@ -18,8 +18,8 @@ function WhatWeDo() {
               <h3>Provide Education</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!
+                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Nesciunt, accusantium!
               </p>
             </div>
           </div>
@@ -29,8 +29,8 @@ function WhatWeDo() {
               <h3>Provide Education</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!
+                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Nesciunt, accusantium!
               </p>
             </div>
           </div>
@@ -40,12 +40,17 @@ function WhatWeDo() {
               <h3>Provide Education</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!
+                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Nesciunt, accusantium!
               </p>
             </div>
           </div>
         </div>
+      </div>
+      <div className="circles circles-for-mision">
+        <div className="inner-circle-1"></div>
+        <div className="inner-circle-2"></div>
+        <div className="inner-circle-3"></div>
       </div>
     </div>
   )

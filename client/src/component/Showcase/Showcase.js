@@ -11,9 +11,7 @@ function Showcase(props) {
             Empower <br /> With Education
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.{" "}
+          Our vision is to develop servant leadership qualities in youth to prepare them to make social and economic contributions to their community and country.{" "}
           </p>
           <div className="main-button" onClick={() => props.Donate()}>
             SUPPORT US

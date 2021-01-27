@@ -13,9 +13,9 @@ const Donation = (props) => {
   const prevPage = () => {
     setField({ ...field, page: field.page - 1 })
   }
-  const submit = () => {
-    return null
-  }
+  // const submit = () => {
+  //   return null
+  // }
 
 
   const displayFields = () => {
@@ -30,42 +30,42 @@ const Donation = (props) => {
         return <Field1 />
     }
   }
-  const displayButtons = () => {
-    switch (field.page) {
-      case 1:
-        return (
-          <div className="navigation-section">
-            <div className="next-button" onClick={() => nextPage()}>
-              NEXT
-            </div>
-          </div>
-        )
-      case 2:
-        return (
-          <div className="navigation-section">
-            <div className="next-button back-button" onClick={() => prevPage()}>
-              BACK
-            </div>
-            <div className="next-button" onClick={() => nextPage()}>
-              NEXT
-            </div>
-          </div>
-        )
-      case 3:
-        return (
-          <div className="navigation-section">
-            <div className="next-button back-button" onClick={() => prevPage()}>
-              BACK
-            </div>
-            <div className="next-button s-button" onClick={() => submit()}>
-              SUBMIT
-            </div>
-          </div>
-        )
-      default:
-        return null
-    }
-  }
+  // const displayButtons = () => {
+  //   switch (field.page) {
+  //     case 1:
+  //       return (
+  //         <div className="navigation-section">
+  //           <div className="next-button" onClick={() => nextPage()}>
+  //             NEXT
+  //           </div>
+  //         </div>
+  //       )
+  //     case 2:
+  //       return (
+  //         <div className="navigation-section">
+  //           <div className="next-button back-button" onClick={() => prevPage()}>
+  //             BACK
+  //           </div>
+  //           <div className="next-button" onClick={() => nextPage()}>
+  //             NEXT
+  //           </div>
+  //         </div>
+  //       )
+  //     case 3:
+  //       return (
+  //         <div className="navigation-section">
+  //           <div className="next-button back-button" onClick={() => prevPage()}>
+  //             BACK
+  //           </div>
+  //           <div className="next-button s-button" onClick={() => submit()}>
+  //             SUBMIT
+  //           </div>
+  //         </div>
+  //       )
+  //     default:
+  //       return null
+  //   }
+  // }
   return (
     <div className="donation">
       <div className="top-section">

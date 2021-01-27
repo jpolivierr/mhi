@@ -5,14 +5,12 @@ function OurMission() {
   return (
     <div className="section-style our-mission">
       <div className="content-box-container">
-        <div className="mission-box-img"></div>
+        <div className="mission-box-img just-mission"></div>
         <div className="content-box our-mission-content-box">
           <h2>Our <br/> Mission</h2>
           <div className="sub-title">Support our kids in haiti.</div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-            alias eveniet nihil accusamus corrupti! Est ipsum esse, placeat et
-            sequi exercitationem rem ratione minima.
+          Apart from providing academic, vocational and moral instruction, MHI believes it is important to develop the character of its youth and young adults in preparation for the challenges life invariably poses to us all. We want to be involved in a variety of areas that teaches about life: Education, health/Wellness, sports, environmental, helping the poor, etc
           </p>
         </div>
       </div>

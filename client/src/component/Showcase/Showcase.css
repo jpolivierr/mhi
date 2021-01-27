@@ -31,7 +31,7 @@
   width: var(--div-width);
   max-width: 710px;
   margin: var(--div-margin);
-  background-color: rgba(43, 109, 163, 0.692);
+  background-color: var(--background-blue);
   padding: 3rem;
   z-index: 2 !important;
 }
