@@ -9,7 +9,7 @@
   margin-top: 2rem;
 }
 .about-page-img{
-    background: red;
+    background: url(../../images/team2.jpg) no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,12 +29,7 @@
     align-items: center;
 }
 
-.project-page-img{
-    width: 95%;
-    max-width: 900px;
-    background: red;
-    height: 400px;
-}
+
 
 .contact-info-list li p{
     margin: 0;
@@ -66,4 +61,22 @@
 .form-button{
    width: 100%;
    border-radius: 5px;
+}
+.project-page-img{
+    width: 95%;
+    max-width: 900px;
+    border-bottom:1px solid silver;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+}
+video{
+    width: 100%;
+    height: 300px;
+}
+
+video source{
+    width: 100%;
 }

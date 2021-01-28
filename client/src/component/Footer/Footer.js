@@ -35,7 +35,7 @@ function Footer() {
           </div>
           <div className="section footer-navigation">
             <h3>NAVIGATION</h3>
-            <ul>
+            <ul className='footer-nav-list'>
               <NavLink to="/home">
                 <li>Home</li>
               </NavLink>

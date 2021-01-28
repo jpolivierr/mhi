@@ -1,5 +1,8 @@
 import React, { useEffect } from "react"
 import TitleSection from "../Title-section/titleSection"
+import video1 from "../../video/vid1.mp4"
+import video2 from "../../video/vid2.mp4"
+import video3 from "../../video/vid3.mp4"
 
 import "./PageGrid.css"
 
@@ -25,7 +28,7 @@ const AboutPageGrid = () => {
             food and healthcare.
           </p>
         </div>
-        <div className="about-page-img">hello</div>
+        <div className="about-page-img"></div>
       </div>
       <div className="circles circles-for-mision">
         <div className="inner-circle-1"></div>
@@ -51,7 +54,23 @@ export const ProjectPageGrid = () => {
           title="MHI CUP"
           titleContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit harum doloribus odio, libero at atque commodi."
         />
-        <div className="project-page-img">hello</div>
+        <div className="project-page-img">
+          <div className="video video1">
+            <video width="" height="" controls>
+              <source src={video1} type="video/mp4"></source>
+            </video>
+          </div>
+          <div className="video video2">
+            <video width="" height="" controls>
+              <source src={video2} type="video/mp4"></source>
+            </video>
+          </div>
+          <div className="video video3">
+            <video width="" height="" controls>
+              <source src={video3} type="video/mp4"></source>
+            </video>
+          </div>
+        </div>
       </div>
       <div className="circles circles-for-mision">
         <div className="inner-circle-1"></div>
@@ -75,19 +94,39 @@ export const ContactPageGrid = () => {
             CONNECT WITH US Do you have questions or are you looking to
             volunteer? Please connect with us
           </p>
-          <ul className='contact-info-list'>
-            <li><i class="fas fa-phone"></i> <p>Miami: (305) 984-7446</p> </li>
-            <li><i class="fas fa-phone"></i> <p>Haiti: (509) 3-324-4811</p> </li>
-            <li><i class="fas fa-map-marker-alt"></i> <p> 18680 NE 2nd Avenue <br/> Miami, Florida 33179</p></li>
-            <li> <i class="fas fa-envelope"></i> <a href='mailto:info@ourmhi.org'>info@ourmhi.org</a> </li>
+          <ul className="contact-info-list">
+            <li>
+              <i className="fas fa-phone"></i> <p>Miami: (305) 984-7446</p>{" "}
+            </li>
+            <li>
+              <i className="fas fa-phone"></i> <p>Haiti: (509) 3-324-4811</p>{" "}
+            </li>
+            <li>
+              <i className="fas fa-map-marker-alt"></i>{" "}
+              <p>
+                {" "}
+                18680 NE 2nd Avenue <br /> Miami, Florida 33179
+              </p>
+            </li>
+            <li>
+              {" "}
+              <i className="fas fa-envelope"></i>{" "}
+              <a href="mailto:info@ourmhi.org">info@ourmhi.org</a>{" "}
+            </li>
           </ul>
         </div>
         <form className="contact-form">
-          <input type="text" placeholder='Name'/>
-          <input type="text" placeholder='subject'/>
-          <input type="text" placeholder='Phone'/>
-          <textarea placeholder='Message' name="" id="" cols="20" rows="5"></textarea>
-          <button className='main-button form-button'>Submit</button>
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="subject" />
+          <input type="text" placeholder="Phone" />
+          <textarea
+            placeholder="Message"
+            name=""
+            id=""
+            cols="20"
+            rows="5"
+          ></textarea>
+          <button className="main-button form-button">Submit</button>
         </form>
       </div>
       <div className="circles circles-for-mision">

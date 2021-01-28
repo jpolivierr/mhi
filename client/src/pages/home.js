@@ -14,13 +14,11 @@ function Home(props) {
   return (
     <div className="home">
   
-      <Showcase/>
+      <Showcase  Donate = {()=>{props.donatez()}}/>
       <OurMission/>
-      <ThePledge 
-        Donate = {()=> props.donate()}
-      />
+      <ThePledge />
       <WhatWeDo/>
-      <Impact/>
+      <Impact Donate = {()=>{props.donatez()}} />
       <JoinUs/>
       <News/>
       {/* <Titlesection />

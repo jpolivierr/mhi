@@ -14,6 +14,7 @@ function WhatWeDo() {
         <div className="what-we-do-showcase">
           <div className="box showcase-1">
             <div className="box-content showcase-content">
+              
               <div className="showcase-mini-text">lorem sumrini</div>
               <h3>Provide Education</h3>
               <p>

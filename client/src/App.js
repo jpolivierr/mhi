@@ -56,7 +56,9 @@ function App() {
         {/* {displayMenu()} */}
         <Navigation Modal={donationstatus} Menu={openMenu} />
         <Switch>
-          <Route path='/home' exact component={Home}/>
+          <Route path='/home' exact render={()=>{
+           return <Home donatez = {donationstatus}/>
+          }}/>
           <Route path='/about' exact component={About}/>
           <Route path='/projects' exact component={Projects}/>
           <Route path='/contact' exact component={Contact}/>

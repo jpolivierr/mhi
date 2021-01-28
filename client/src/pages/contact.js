@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../component/Header/Header'
-import {ContactPageGrid} from '../component/Page-grid/PageGrid'
+import ContactPageGrid from '../component/Page-contact-us/ContactGrid'
 
 const contact = () => {
     return (

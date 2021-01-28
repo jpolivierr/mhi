@@ -42,7 +42,7 @@
     /* border: 1px solid blue; */
 }
   .nav-links li {
-      padding: .5rem 0rem;
+      padding: 0rem 0rem;
     margin-right: 2rem;
     cursor: pointer;
     transition: color .3s ease-in-out;

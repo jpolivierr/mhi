@@ -26,6 +26,9 @@
 .social-media-list{
    display: flex;
 }
+.footer-nav-list a:nth-child(){
+    color: red !important;
+}
 
 .social-media-list li i{
     font-size: 1.5rem;
