@@ -1,17 +1,14 @@
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react"
 import formValidator from "../formValidator"
 import "./ContactGrid.css"
 
 const ContactPageGrid = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  })
-
   const [form, setForm] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
+    msg: { value: "", style: "" },
   })
   const [formResult, setFormResult] = useState({
     errorFound: false,
@@ -19,6 +16,9 @@ const ContactPageGrid = () => {
     email: { value: "", error: false, errorMsg: "", errorStyle: "" },
     message: { value: "", error: false, errorMsg: "", errorStyle: "" },
   })
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }, [])
 
   const updateValue = (e) => {
     switch (e.target.id) {
@@ -41,11 +41,33 @@ const ContactPageGrid = () => {
 
   const submit = (e) => {
     e.preventDefault()
-    if (!formValidator(form).errorFound) {
-        setForm({...form, name: '',email: '', phone: '', message: ''})
-        setFormResult(formValidator(form))
+    if (!formValidator(form, "contactForm").errorFound) {
+      setForm({
+        ...form,
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+        msg: {
+          value: "Your information was sent. Thank you!",
+          style: "success-msg",
+        },
+      })
+      setFormResult(formValidator(form, "contactForm"))
+      setTimeout(() => {
+        setForm({
+          ...form,
+          name: "",
+          email: "",
+          phone: "",
+          msg: {
+            value: "",
+            style: "",
+          },
+        })
+      }, 3000)
     } else {
-      setFormResult(formValidator(form))
+      setFormResult(formValidator(form, "contactForm"))
     }
   }
 
@@ -85,6 +107,7 @@ const ContactPageGrid = () => {
           }}
           className="contact-form"
         >
+          <div className={form.msg.style}>{form.msg.value}</div>
           <input
             className={formResult.name.errorStyle}
             onChange={(e) => updateValue(e)}

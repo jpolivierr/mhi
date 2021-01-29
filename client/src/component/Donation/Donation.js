@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import IntroPage from "./IntroPage"
+import SuccessPage from "./SuccessPage"
 import Field1 from "./Field1"
 import Field2 from "./Field2"
 import Field3 from "./Field3"
@@ -17,55 +19,23 @@ const Donation = (props) => {
   //   return null
   // }
 
-
   const displayFields = () => {
     switch (field.page) {
       case 1:
-        return <Field1 field1result = {nextPage} />
+        return <IntroPage field1result={nextPage} />
       case 2:
-        return <Field2 prevPage = {prevPage} nextPage = {nextPage} />
+        return <Field1 field1result={nextPage} prevPage={prevPage} />
       case 3:
-        return <Field3 />
+        return <Field2 prevPage={prevPage} nextPage={nextPage} />
+      case 4:
+        return <Field3 field1result={nextPage} prevPage={prevPage} />
+      case 5:
+        return <SuccessPage prevPage={prevPage} />
       default:
         return <Field1 />
     }
   }
-  // const displayButtons = () => {
-  //   switch (field.page) {
-  //     case 1:
-  //       return (
-  //         <div className="navigation-section">
-  //           <div className="next-button" onClick={() => nextPage()}>
-  //             NEXT
-  //           </div>
-  //         </div>
-  //       )
-  //     case 2:
-  //       return (
-  //         <div className="navigation-section">
-  //           <div className="next-button back-button" onClick={() => prevPage()}>
-  //             BACK
-  //           </div>
-  //           <div className="next-button" onClick={() => nextPage()}>
-  //             NEXT
-  //           </div>
-  //         </div>
-  //       )
-  //     case 3:
-  //       return (
-  //         <div className="navigation-section">
-  //           <div className="next-button back-button" onClick={() => prevPage()}>
-  //             BACK
-  //           </div>
-  //           <div className="next-button s-button" onClick={() => submit()}>
-  //             SUBMIT
-  //           </div>
-  //         </div>
-  //       )
-  //     default:
-  //       return null
-  //   }
-  // }
+
   return (
     <div className="donation">
       <div className="top-section">

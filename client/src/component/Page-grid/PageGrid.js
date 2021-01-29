@@ -82,9 +82,6 @@ export const ProjectPageGrid = () => {
 }
 
 export const ContactPageGrid = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  })
   return (
     <div className="section-style">
       <div className="content-box-container page-grid-container">
