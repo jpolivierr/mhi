@@ -71,6 +71,7 @@ function App() {
               return <Home donatez={donationstatus} />
             }}
           />
+          
           <Route path="/about" exact component={About} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/contact" exact component={Contact} />

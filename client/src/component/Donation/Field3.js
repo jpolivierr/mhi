@@ -59,7 +59,6 @@ const Field3 = (props) => {
 
   useEffect(() => {
     const pmtInfo = JSON.parse(localStorage.getItem("user-pmt-info"))
-    const basicInfo = JSON.parse(localStorage.getItem("user-basic-info"))
     const reviewCopy = review
     if (pmtInfo !== null) {
       // setReview({...review, price: pmtInfo.custom})
@@ -76,7 +75,7 @@ const Field3 = (props) => {
       // setForm(dataStored)
     }
     setReview({ ...review }, reviewCopy)
-  }, [])
+  },[])
 
   const changeHandler = (e) => {
     switch (e.target.id) {

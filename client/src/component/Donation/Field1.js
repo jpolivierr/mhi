@@ -159,7 +159,6 @@ const Field1 = (props) => {
 
   const cdStyle = formSelection.paymentMethod[0].style
   const paypalStyle = formSelection.paymentMethod[1].style
-  const cashappStyle = formSelection.paymentMethod[2].style
 
   const sa15 = formSelection.selectedAmout[0].style
   const sa30 = formSelection.selectedAmout[1].style

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import TitleSection from "../Title-section/titleSection"
-import video1 from "../../video/vid1.mp4"
 import video2 from "../../video/vid2.mp4"
 import video3 from "../../video/vid3.mp4"
 
@@ -55,11 +54,6 @@ export const ProjectPageGrid = () => {
           titleContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit harum doloribus odio, libero at atque commodi."
         />
         <div className="project-page-img">
-          <div className="video video1">
-            <video width="" height="" controls>
-              <source src={video1} type="video/mp4"></source>
-            </video>
-          </div>
           <div className="video video2">
             <video width="" height="" controls>
               <source src={video2} type="video/mp4"></source>

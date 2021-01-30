@@ -1,9 +1,6 @@
 import React from "react"
 
-const SuccessPage = (props) => {
-  const prevPage = () => {
-    props.prevPage()
-  }
+const SuccessPage = () => {
   return (
     <div className="Field">
       <div className="header-section">
