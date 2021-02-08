@@ -6,20 +6,20 @@ function Navigation(props) {
     <div className="navigation">
       <div className="nav-background-color"></div>
       <div className="nav-bar">
-        <NavLink to="/home"  replace>
+        <NavLink to="/"  replace>
           <div className="logo"></div>
         </NavLink>
 
         <ul className="nav-links">
           <li>
-            <NavLink to="/home" activeClassName="active-link" replace>
+            <NavLink exact to  ="/" activeClassName="active-link" replace>
               Home
             </NavLink>
           </li>
 
           <li>
             {" "}
-            <NavLink to="/about" activeClassName="active-link" replace>
+            <NavLink to ="/about" activeClassName="active-link" replace>
               {" "}
               About Us{" "}
             </NavLink>{" "}

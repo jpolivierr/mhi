@@ -13,7 +13,7 @@ function Footer() {
               <li>
                 {" "}
                 <a
-                  style={{ color: "var(--main-color)" }}
+                  style={{ color: "white" }}
                   href="mailto:info@ourmhi.org"
                 >
                   info@ourmhi.org

@@ -14,35 +14,32 @@ function WhatWeDo() {
         <div className="what-we-do-showcase">
           <div className="box showcase-1">
             <div className="box-content showcase-content">
-              
-              <div className="showcase-mini-text">lorem sumrini</div>
-              <h3>Provide Education</h3>
+              {/* <div className="showcase-mini-text">lorem sumrini</div> */}
+              <h3>Prepare our Youth</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Nesciunt, accusantium!
+              
+                Enhance the readiness to learn of children in the Greater city
+                of Au-Cap by providing them with school supplies that are
+                essential to academic success.
               </p>
             </div>
           </div>
           <div className="box showcase-2">
             <div className="box-content showcase-content">
-              <div className="showcase-mini-text">lorem sumrini</div>
+              {/* <div className="showcase-mini-text">lorem sumrini</div> */}
               <h3>Provide Education</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Nesciunt, accusantium!
+              Prepare our Youth to provide a comprehensive response to the educational, social, and emotional, needs of children, youth, families and communities.
               </p>
             </div>
           </div>
           <div className="box showcase-3">
             <div className="box-content showcase-content">
-              <div className="showcase-mini-text">lorem sumrini</div>
-              <h3>Provide Education</h3>
+              {/* <div className="showcase-mini-text">lorem sumrini</div> */}
+              <h3>Provide Resources</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt, accusantium!Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Nesciunt, accusantium!
+                Strives to enhance the merchandise available to teachers by providing them with useful, valuable products
+                at no cost to the students or families.
               </p>
             </div>
           </div>

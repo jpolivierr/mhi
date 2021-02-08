@@ -24,6 +24,9 @@
     height: 100%;
     margin: var(--div-margin);
 }
+.nav-bar a{
+    padding: .2rem .5rem
+}
 .logo{
     /* border: 1px solid red; */
      width: 103px;
@@ -43,7 +46,7 @@
 }
   .nav-links li {
       padding: 0rem 0rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     cursor: pointer;
     transition: color .3s ease-in-out;
   }
@@ -93,7 +96,7 @@
     border-radius: 100px;
     color: var(--main-color);
     border: 2px solid var(--main-color);
-    animation: on .5s ease-in-out ;
+    animation: on .3s ease-in-out ;
 }
 
 @keyframes on{

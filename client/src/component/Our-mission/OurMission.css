@@ -1,5 +1,4 @@
 .our-mission{
-
     height: var(--div-height);
     max-height: 600px;
     min-height: 450px;
@@ -7,6 +6,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-top: 0;
     padding-bottom: 0 !important;
 
 }

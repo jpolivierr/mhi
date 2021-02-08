@@ -65,7 +65,7 @@ function App() {
         <Navigation Modal={donationstatus} Menu={openMenu} />
         <Switch>
           <Route
-            path="/home"
+            path="/"
             exact
             render={() => {
               return <Home donatez={donationstatus} />
